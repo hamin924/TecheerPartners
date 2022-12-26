@@ -13,18 +13,18 @@
         border: 1px solid #ccc;
         border-radius: 50%;
         box-shadow: 5px 5px 30px 2px #000;
-        animation: rotateBear 2.5s infinite; /* rotateBear 애니메이션 2.5초 동안 실행. 무한 반복 */
+        animation: rotateBear 2.5s infinite; /* rotateBear 애니메이션 2.5초 동안 실행 무한 반복 */
       }
 
       @keyframes rotateBear {
         from {
-          transform: perspective(200px) rotateY(0deg);
+          transform: perspective(200px) rotateY(0deg); /* 시작 지점*/
         }
         50% {
-          transform: perspective(200px) rotateY(-180deg);
+          transform: perspective(200px) rotateY(-180deg); /* 중간 지점 */
         }
         to {
-          transform: perspective(200px) rotateY(-360deg);
+          transform: perspective(200px) rotateY(-360deg); /* 끝 지점 */
         }
       }
     </style>
