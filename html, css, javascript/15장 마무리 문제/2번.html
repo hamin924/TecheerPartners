@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습문제 2</title>
+  </head>
+  <body>
+    <script>
+      function compare(x, y) {
+        /* 비교 함수 정의 */
+        if (x > y) {
+          /* x가 y보다 클 때*/
+          alert(x + '(이)가 ' + y + '보다 큽니다'); /* 알림 창은 alert!!*/
+        } else if (y > x) {
+          /* y가 x 보다 클 때*/
+          alert(y + '(이)가 ' + x + '보다 큽니다');
+        } else {
+          /* x와 y가 같을 때 */
+          alert('같습니다.');
+        }
+      }
+      var num1 = parseInt(prompt('비교할 첫 번째 숫자'));
+      var num2 = parseInt(prompt('비교할 두 번째 숫자'));
+      compare(num1, num2);
+    </script>
+  </body>
+</html>
